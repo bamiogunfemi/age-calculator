@@ -36,12 +36,12 @@ class AgeHome extends StatefulWidget {
 }
 
 class _AgeHomeState extends State<AgeHome> {
-  dynamic age = 0.0;
+  int age = 0;
   int selectedMonth;
   int selectedDay;
   int selectedYear;
   var fullYear;
-  dynamic curYear = new DateTime.now();
+  DateTime curYear = new DateTime.now();
   void _showPicker() {
     showDatePicker(
             context: context,
@@ -104,4 +104,4 @@ class _AgeHomeState extends State<AgeHome> {
     );
   }
 }
-//TODO -padding round text and date.now instaed of 2020
+
